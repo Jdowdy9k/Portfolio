@@ -1,1 +1,24 @@
+.nav-wrapper{
+background-color:rgb(39, 59, 73);
+border-bottom: solid 2px;
+border-color: gold;
+padding-left: 50px;
+padding-right: 65px;
+}
 
+body {
+    background-image: url("../images/55bb28636775ac17af84ed4f963109a5.jpg");
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+.page-footer{
+    margin-top: auto;
+    background-color:rgb(39, 59, 73);
+    border-top: solid 2px;
+    border-color: gold;
+}
