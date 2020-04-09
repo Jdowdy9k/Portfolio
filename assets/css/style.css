@@ -7,11 +7,18 @@ padding-right: 65px;
 }
 
 body {
-    background-image: url("../images/55bb28636775ac17af84ed4f963109a5.jpg");
+    background-image: url("../images/studio-b-background-1.jpg");
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
+#bio-div,#gallery-div{
+background-color: rgb(173, 213, 241);
+font-family: 'Encode Sans Expanded', sans-serif;
+font-size: 18px;
+padding: 15px;
+}
+
 
 main {
     flex: 1 0 auto;
@@ -22,3 +29,23 @@ main {
     border-top: solid 2px;
     border-color: gold;
 }
+button {
+    float: right;
+    font-weight: normal;
+    color: rgb(255	202	40);
+    background-color: rgb(39, 59, 73);
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: auto;
+    cursor: pointer;
+    height:35px;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+    box-shadow: 1px 1px  rgb(255	202	40), 2px 2px rgb(255	202	40), 3px 3px  rgb(255	202	40);
+    transform: translateX(-3px);
+    }
