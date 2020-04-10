@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 
-    <title>Justin Dowdy</title>
+    <title>JD Contact</title>
 
 </head>
 
@@ -19,41 +19,32 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo" style="color: gold;">Justin Dowdy</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="contact.html"target="_blank" style="font-size: large;color: gold;">Contact</a></li>
-                <li><a href="gallery.html"target="_blank" style="font-size: large;color: gold;">gallery</a></li>
-            </ul>
+            <button id="contact"><a href="contact.html" target="_blank" style="font-size: large;">Contact</a></button>
+            <button id="gallery"><a href="gallery.html" target="_blank" style="font-size: large;">Gallery</a></li>
         </div>
     </nav>
 
-    <div class="col s12 m7">
-        <div class="card horizontal large" style="margin: auto;max-width: 960px;margin-top: 100px;margin-bottom: 100px;border-radius: 15px;">
-            <div class="card-image" style="padding: 15px;border-radius: 25px;">
-                <img src="assets/images/headshot.jpg" style="border-radius: 25px;">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <p>I'm a
-                        craftsman by trade
-                        and builder in general. I've always been creating or destroying things, often
-                        times destroying in order to create. And in case of the cartoon robot Models I build at
-                        least,
-                        this cycle of
-                        events tends to be never ending. I've always been a proponate of the philosophy "work hard,
-                        play
-                        harder"
-                        which could explain why I take
-                        my video games so seriously, also why I sometimes pass out with a tiny paint brush and robot
-                        in
-                        my hands.
-                        To sum me up in a word i would use "Adventurer" not because I travel a lot or wonder, but
-                        because my
-                        heart and mind are restless and i simply must see more.</p>
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="" id="name" type="text" class="validate">
+                    <label for="first_name">Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Email address</label>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Message</label>
+                </div>
+            </div>
+        </form>
     </div>
-    
 
 
 
