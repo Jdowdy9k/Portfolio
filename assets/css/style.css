@@ -18,6 +18,11 @@ font-family: 'Encode Sans Expanded', sans-serif;
 font-size: 18px;
 padding: 15px;
 }
+#contactDiv{
+    background-color:  rgb(178, 214, 240);
+    margin-top: 100px;
+    border-radius: 15px;
+}
 
 
 main {
@@ -50,3 +55,29 @@ button {
     box-shadow: 1px 1px  rgb(255	202	40), 2px 2px rgb(255	202	40), 3px 3px  rgb(255	202	40);
     transform: translateX(-3px);
     }
+#submitBtn{
+    float: inherit;
+    font-weight: normal;
+    color: rgb(255	202	40);
+    background-color: rgb(39, 59, 73);
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: auto;
+    padding-bottom: 5px;
+    cursor: pointer;
+    height:35px;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+    box-shadow: 1px 1px  rgb(255	202	40), 2px 2px rgb(255	202	40), 3px 3px  rgb(255	202	40);
+    transform: translateX(-3px);
+    }
+.media{
+    max-width: 960px;
+    max-height: 500px;
+}

@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&family=Jolly+Lodger&display=swap"
+        rel="stylesheet">
 
     <title>JD Contact</title>
 
@@ -18,32 +19,36 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo" style="color: gold;">Justin Dowdy</a>
-            <button id="contact"><a href="contact.html" target="_blank" style="font-size: large;">Contact</a></button>
-            <button id="gallery"><a href="gallery.html" target="_blank" style="font-size: large;">Gallery</a></li>
+            <div class="container-fluid"><a href="#" class="brand-logo" style="color: gold;">Justin Dowdy</a>
+                <button id="contact"><a href="contact.html" target="_blank"
+                        style="font-size: large;">Contact</a></button>
+                <button id="gallery"><a href="gallery.html" target="_blank" style="font-size: large;">Gallery</a></li>
+            </div>
+
         </div>
     </nav>
 
 
-    <div class="row">
+    <div class="row" id="contactDiv">
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s6">
-                    <input placeholder="" id="name" type="text" class="validate">
+                    <input id="name" type="text" class="validate">
                     <label for="first_name">Name</label>
                 </div>
                 <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Email address</label>
+                    <input id="Email" type="email" class="validate">
+                    <label for="Email">Email address</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Message</label>
+                    <input id="message" type="text" class="validate">
+                    <label for="message">Message</label>
                 </div>
             </div>
         </form>
+        <button id="submitBtn">Submit</button>
     </div>
 
 
