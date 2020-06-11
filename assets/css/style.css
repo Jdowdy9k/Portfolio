@@ -1,16 +1,19 @@
-.nav-wrapper{
-background-color:rgb(39, 59, 73);
-border-bottom: solid 2px;
-border-color: gold;
+nav{
+background-color: rgba(32, 56, 165, 0.205) !important;
+border: none !important;
 padding-left: 50px;
 padding-right: 65px;
 }
 
 body {
-    background-image: url("../images/studio-b-background-1.jpg");
+    background-image: url("../images/IMG_20200405_162639.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    align-content: center;
 }
 #bio-div,#gallery-div{
 background-color: rgb(173, 213, 241);
@@ -24,15 +27,32 @@ padding: 15px;
     border-radius: 15px;
 }
 
+.fName {
+    margin-right: 10px;
+    margin-top: auto;
+   float: right;
+}
+.lName {
+    margin-right: 10px;
+    margin-top: auto;
+    float: right;
+}
+.tag {
+    color: white;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 main {
     flex: 1 0 auto;
   }
 .page-footer{
+    font-size: x-large;
     margin-top: auto;
-    background-color:rgb(39, 59, 73);
+    background-color: rgba(17, 64, 95, 0.712) !important;
     border-top: solid 2px;
     border-color: gold;
+    
 }
 button {
     float: right;
