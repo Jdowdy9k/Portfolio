@@ -21,42 +21,38 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo" style="color: gold;">Justin Dowdy</a>
             <button id="contact"><a href="contact.html" target="_blank" style="font-size: large;">Contact</a></button>
             <button id="gallery"><a href="gallery.html" target="_blank" style="font-size: large;">Gallery</a></li>
         </div>
     </nav>
 
-    <div class='bShadow-34 col xl8 l8 m12 s12' id="gallery-div">
-
-        <div class="row center-align inner-div"
-            style="margin: auto;max-width: 960px;margin-top: 100px;margin-bottom: 100px;border-radius: 15px;">
-
-            <ul class="list-unstyled">
-                <li class="media">
-                    <img src="./assets/images/catfish.png" class="mr-3" alt="..." style="max-width: 960px; max-height: 300px;margin: auto;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">CatFishe'd</h5>
-                      <p>A fun app used to create a randomly generated dating site profile</p>
-                    </div>
-                </li>
-                <li class="media">
-                    <img src="./assets/images/screenshot-jdowdy9k.github.io-2020.04.10-12_22_37.png" class="mr-3" alt="..." style="max-width: 960px; max-height: 500px;margin-top: 15px;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Weather Dashboard</h5>
-                       <p> app to deliver the User current weather conditions as well as a five day forcast for any U.S. city given</p>
-                </li>
-                <li class="media">
-                    <img src="./assets/images/screenshot-jdowdy9k.github.io-2020.04.10-12_23_56.png" class="mr-3" alt="..." style="max-width: 960px; max-height: 500px;margin-top: 15px;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Password Generator</h5>
-                        <p>A simple generator app that gives the user a randomized password with customized perameters</p>
-                    </div>
-                </li>
-            </ul>
+    <div class="container" id="galleryDiv">
+        <div class="card mb-3" id="gallCard1">
+            <img src="./assets/images/theitemshop.png" class="card-img-top" alt="ReeledIn">
+            <div class="card-body" style="background-color: rgba(70, 131, 180, 0.637); border-radius: 5px;">
+                <h5 class="card-title" style="font-weight: bolder; font-size: xx-large;">The Item Shop</h5>
+                <p class="card-text">github.com/skooma1992/TheItemShopRepo || theitemshop.herokuapp.com</p>
+                <p>An e-commerce application meant to give users the ability to purchase online digital content as well as physical merchandise that coincides with a Video Game theme.</p>
+                
+            </div>
+        </div>
+        <div class="card mb-3" id="gallCard2">
+            <img src="./assets/images/ReeledIn.png" class="card-img-top" alt="ReeledIn">
+            <div class="card-body" style="background-color: rgba(70, 131, 180, 0.637); border-radius: 5px;">
+                <h5 class="card-title" style="font-weight: bolder; font-size: xx-large;">ReeledIn</h5>
+                <p class="card-text">github.com/skooma1992/ReeledIn || reeledin.herokuapp.com </p>
+                <p>A mock social media platform that would allow anglers from around the nation to post favorite fishing spots and catches, as well as rate and comment on those spots and catches. </p>
+            </div>
+        </div>
+        <div class="card mb-3" id="gallCard3">
+            <img src="./assets/images/catfishd.png" class="card-img-top" alt="catfish'd">
+            <div class="card-body" style="background-color: rgba(70, 131, 180, 0.637); border-radius: 5px;">
+                <h5 class="card-title" style="font-weight: bolder; font-size: xx-large;">CatFish'd</h5>
+                <p class="card-text">github.com/Jdowdy9k/catfish_app || jdowdy9k.github.io/catfish_app </p>
+                <p>A mock dating app that users would create user profiles populated with fake generated data to match with other user generated fake profiles.</p>
+            </div>
         </div>
     </div>
-
 
 
 
@@ -70,5 +66,5 @@
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>

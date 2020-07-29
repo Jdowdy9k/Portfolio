@@ -13,13 +13,30 @@
         rel="stylesheet">
 
     <title>JD Contact</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_NY46KlXWoz6RKaos7GRMN");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('jdowdy9k_gmail_com', 'template_F3wwrim5', this);
+                console.log(this);
 
+            });
+        }
+    </script>
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper">
-            <div class="container-fluid"><a href="#" class="brand-logo" style="color: gold;">Justin Dowdy</a>
+            <div class="container-fluid">
                 <button id="contact"><a href="contact.html" target="_blank"
                         style="font-size: large;">Contact</a></button>
                 <button id="gallery"><a href="gallery.html" target="_blank" style="font-size: large;">Gallery</a></li>
@@ -29,28 +46,20 @@
     </nav>
 
 
-    <div class="row" id="contactDiv">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input id="name" type="text" class="validate">
-                    <label for="first_name">Name</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="Email" type="email" class="validate">
-                    <label for="Email">Email address</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="message" type="text" class="validate">
-                    <label for="message">Message</label>
-                </div>
-            </div>
-        </form>
-        <button id="submitBtn">Submit</button>
+    <div id="contactcont">
+        <div id="contactDiv">
+            <form id="contact-form" classname="contactForm">
+                <input type="hidden" name="contact_number">
+                <label style="font-size: large; text-shadow: black; color: white;">Name</label>
+                <input type="text" name="user_name" id="formFeild2">
+                <label style="font-size: large; text-shadow: black; color: white;">Email</label>
+                <input type="email" name="user_email" id="formFeild3">
+                <label style="font-size: large; text-shadow: black; color: white;">Message</label>
+                <textarea name="message" id="formFeild1"></textarea>
+                <button id="submitBtn" type="submit" value="Send" onclick="this.form.reset()">Submit</button>
+            </form>
+        </div>
     </div>
-
 
 
 
@@ -60,9 +69,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
