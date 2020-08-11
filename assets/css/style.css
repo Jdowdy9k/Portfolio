@@ -92,6 +92,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     margin: 5px;
+    float: right;
 }
 #fName, #lName {
     max-width: 100%;
