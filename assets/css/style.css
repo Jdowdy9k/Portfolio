@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     border-radius: 18px;
+    margin-top: 25px;
     background-color: rgba(109, 134, 245, 0.205) !important;
     font-family: 'Encode Sans Expanded', sans-serif;
     font-size: 18px;
@@ -57,7 +58,7 @@ body {
     margin-top: 11rem;
     border-radius: 15px;
     color: gold;
-    width: 70rem;
+    width: 100%;
     padding: 35px;
 }
 #contactcont {
@@ -66,7 +67,8 @@ body {
     align-items: center;
     flex-direction: column;
     margin: auto;
-    width: 45%;
+    margin-bottom: 11rem;
+    width: 70%;
 }
 #formFeild1, #formFeild2, #formFeild3 {
     background-color: rgba(70, 131, 180, 0.794);
@@ -113,6 +115,19 @@ main {
     padding: 5px;
     margin: 5px;
 }
+#contactLinks, #subButt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 8px;
+}
+.linkIcon {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 button {
     float: right;
     font-weight: normal;
@@ -136,7 +151,6 @@ button {
     transform: translateX(-3px);
     }
 #submitBtn{
-    float: inherit;
     font-weight: normal;
     color: white;
     background-color: rgb(39, 59, 73);
@@ -147,7 +161,6 @@ button {
     cursor: pointer;
     height:45px;
     width: 135px;
-    margin-left: 40%;
     font-size: 25px;
     transition: all 0.2s ease-in-out;
     }
